@@ -43,6 +43,8 @@ class AQSensor:
                                 return ppm
                 if rsper>110:
 			return 0
+		elif rsper==0:
+			return 0
 		else:
 			return (1/float(rsper))*1100
 
